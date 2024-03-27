@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person={
+            name:"Pragya",
+            age:22,
+            location:"Bhopal",
+        };
+        let output=person.name;
+        output=person.age;
+        output=person.location;
+        console.log(output);
+        function name(){
+            console.log("hello World");
+        }
+        name();
+        function subtract(num1,num2){
+            return num1- num2;
+            console.log("Hello");//won't print these
+        }
+        console.log(subtract(20,10));
+        const sub=function(num1,num2){
+            return num1-num2
+        }
+        console.log(sub(200,100));
+    </script>
+</body>
+</html>

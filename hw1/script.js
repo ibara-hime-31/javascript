@@ -1,0 +1,9 @@
+document.querySelector("h1.heading").innerHTML="This is my new heading";
+document.querySelector("h1.heading").style.backgroundColor="pink";
+document.querySelector("h1.heading").style.color="green";
+document.getElementById("mypara").innerHTML="This is my first paragraph";
+document.getElementById("mypara").style.backgroundColor="black";
+document.getElementById("mypara").style.color="white";
+document.querySelector("p.heading").innerHTML="This is my second paragraph";
+document.querySelector("p.heading").style.backgroundColor="blue";
+document.querySelector("p.heading").style.fontSize="34px";
