@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="save.php" method="post" name="f1" onsubmit="return validate()">
+        Name: <input type="text" name="name" value=""><br><br>
+        Email: <input type="email" name="email" value=""><br><br>
+        Address: <input type="text" name="add" value=""><br><br>
+        Password: <input type="password" name="pass" value=""><br><br>
+        <input type="submit" value="Send">
+    </form>
+    <form action="save.php" method="post" name="form2" onsubmit="return validate2()">
+    Enter name: <input type="text" name="name" value=""><br><br>
+    Password: <input type="password" name="pass" value=""><br><br>
+    <input type="submit" value="send">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

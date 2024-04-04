@@ -37,3 +37,10 @@ function display2(){
     y.style.border="2px dotted black";
     y.style.borderRadius="20px";
 }
+function change(){
+    document.getElementById("myimg").src="pizza.jpg"
+}
+
+function change2(){
+    document.getElementById("myimg").src="burger.jpg"
+}

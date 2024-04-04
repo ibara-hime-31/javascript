@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #myimg{
+            width:300px;
+        }
+    </style>
 </head>
 <body>
+    <!--<button onclick="change">Change image</button>-->
+    <br><br>
+    <img onmouseover="change()" onmouseout="change2()"
+    src="./burger.jpg" alt="burger" id="myimg">
     <h1 id="demo"></h1>
     <p id="demo2"></p>
     <button onclick="display()" id="btn">Click here</button>
