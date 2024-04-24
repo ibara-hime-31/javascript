@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <h1 id="demo4"></h1>
+    <h1 id="demo5"></h1>
+    <script>
+        const person={
+                fname:"John",
+                lname:"Doe",
+                age: 25,
+                city: "Bhopal",
+        };
+        let text="";
+        for(let x in person){
+            text+=person[x] + "<br>";
+            console.log(person[x]);
+        }
+        document.getElementById("demo").innerHTML=text;
+        const arr= [1,2,3,10,30,50];
+        let text1="";
+        for(let x in arr){
+            text1+=arr[x]+"<br>";
+        }
+        document.getElementById("demo1").innerHTML=text1;
+        const arr1=["Bmw","Mercedes","Porche","maruti","Nissan","Nano"]
+        let text2="";
+        for(let x of arr1){
+            text2+= x+ "<br>";
+        }
+        document.getElementById("demo2").innerHTML=text2;
+        const name="Javascript";
+        let text3="";
+        for(let x of name){
+            text3+= x+"<br>";
+        }
+        document.getElementById("demo3").innerHTML=text3;
+        let text4="";
+        let i=0;
+        while(i<10){
+            text4+= i + "<br>";
+            i++;
+            console.log(i);
+        }
+        document.getElementById("demo4").innerHTML=text4;
+        let text5="";
+        let j=0;
+        do{
+            text5+=j;
+            j++;
+            console.log(j);
+        }
+        while(j<10);
+        document.getElementById("demo5").innerHTML=text5;
+    </script>
+</body>
+</html>
