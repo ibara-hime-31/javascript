@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display:flex;
+
+        }
+        #main div{
+            width:20px;
+            height:20px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        #show img{
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="show">
+        <img id="im" src="https://th.bing.com/th/id/OIG4.LgUj9FIjzUbdTSMn0mRg" alt="">
+    </div>
+    <div id="main">
+        <div onclick="run(1)"></div>
+        <div onclick="run(2)"></div>
+        <div onclick="run(3)"></div>
+    </div>
+    <script>
+        let arr=["https://th.bing.com/th/id/OIG4.LgUj9FIjzUbdTSMn0mRg","https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg","https://wallpapers.com/images/featured/image-79gc4p3mqu7an848.jpg"]
+        function run(arg){
+            if(arg==1){
+                document.getElementById("im").src=arr[0];
+            }
+            else if(arg==2){
+                document.getElementById("im").src=arr[1];
+            }
+            else if(arg==3){
+                document.getElementById("im").src=arr[2];
+            }
+        }
+    </script>
+</body>
+</html>

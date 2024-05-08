@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #show img{
+            width:400px;
+        }
+        #left{
+            position:absolute;
+            left:30px;
+            top:150px;
+            color:red;
+        }
+        #right{
+            position:absolute;
+            left:370px;
+            top:150px;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="show"><img id="im" src="https://th.bing.com/th/id/OIG4.LgUj9FIjzUbdTSMn0mRg" alt=""></div>
+    <i id="left" onclick="slider('left')" class="fa-solid fa-arrow-left"></i>
+    <i id="right" onclick="slider('right')" class="fa-solid fa-arrow-right"></i>
+
+    <script>
+        let arr=[
+            "https://th.bing.com/th/id/OIG4.LgUj9FIjzUbdTSMn0mRg","https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg","https://wallpapers.com/images/featured/image-79gc4p3mqu7an848.jpg"
+        ]
+        let count=0;
+        function slider(arg){
+                if(arg=="left"){
+                    if(count==0){
+                        document.getElementById("im").src=arr[0];
+                    }
+                    else if(count==1){
+                        document.getElementById("im").src=arr[0];
+                        count--;
+                    }
+                    else if(count==2){
+                        document.getElementById("im").src=arr[1];
+                        count--;
+                    }
+                }
+                else if(arg=="right"){
+                    if(count==0){
+                        document.getElementById("im").src=arr[1]
+                        count++;
+                    }
+                    else if(count==1){
+                        document.getElementById("im").src=arr[2];
+                        count++;
+                    }
+                    else if(count==2){
+                        document.getElementById("im").src=arr[2];
+                        count--;
+                    }
+                }
+        }
+    </script>
+</body>
+</html>

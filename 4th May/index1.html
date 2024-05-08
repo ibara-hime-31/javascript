@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #store{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-evenly;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="store"></div>
+    
+    <script>
+        const items=[
+            {
+                id:1,
+                name:"Wool-blend jacket",
+                price:"$ 33",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+            {
+                id:2,
+                name:"Strips cotton shirt",
+                price:"$ 13",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+            {
+                id:3,
+                name:"Slim High Ankle jeans",
+                price:"$ 20",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+            {
+                id:4,
+                name:"Oversized T-shirt",
+                price:"$ 23",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+            {
+                id:5,
+                name:"Oversized jacket",
+                price:"$ 40",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+            {
+                id:6,
+                name:"Long-Sleeve Maxy Dress",
+                price:"$ 19",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+            {
+                id:7,
+                name:"Linen Check Blzers",
+                price:"$ 45",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+            {
+                id:8,
+                name:"Linen-blend shirt",
+                price:"$ 34",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+            {
+                id:9,
+                name:"Denim jacket",
+                price:"$ 67",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+            {
+                id:10,
+                name:"Cotton Falenal jacket",
+                price:"$ 78",
+                img:"https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+
+            },
+        ]
+        window.localStorage.setItem("data",JSON.stringify(items));
+        document.getElementById("store").innerHTML=items.map(e=>
+            `<div>
+        <img width="200px" src="${e.img}" alt="">
+        <div>${e.name}</div>
+        <div>${e.price}</div>
+        <div>Add to cart</div>
+    </div>`
+        
+        ).join(" ");
+    </script>
+</body>
+</html>

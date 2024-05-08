@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        background:linear-gradient(red,blue);
+        animation-name:run;
+        animation-duration:5s;
+        animation-iteration-count: infinite;
+        animation-direction:normal;
+    }
+    /* @keyframes run{
+        0%{
+            margin-left: 0px;
+            margin-top:500px;
+            scale:1;
+            background-color: aqua;
+            box-shadow:0px 0px 40px red;
+        }
+        25%{
+            margin-left: 0px;
+            margin-top:100px;
+            scale:1.3;
+            background-color: black;
+            box-shadow:0px 0px 0px red;
+        }
+        50%{
+            margin-left: 0px;
+            margin-top:500px;
+            scale:1;
+            background-color:aqua;
+            box-shadow:0px 0px 40px red; 
+        }
+        75%{
+            margin-left: 0px;
+            margin-top:300px;
+            scale:1.2;
+            background-color: black;
+            box-shadow:0px 0px 0px red;
+        }
+        100%{
+            margin-left: 0px;
+            margin-top:500px;
+            scale:1;
+            background-color: aqua;
+            box-shadow:0px 0px 40px red;
+        }
+    } */
+    
+    @keyframes run{
+        0%{
+            margin-left:0px;
+            margin-top:0px;
+        }
+        25%{
+            margin-left:300px;
+            margin-top:0px;
+        }
+        50%{
+            margin-left:300px;
+            margin-top:500px;
+        }
+        75%{
+            margin-left:600px;
+            margin-top:500px;
+        }
+        100%{
+            margin-left:600px;
+            margin-top:0px;
+        }
+    }
+   
+</style>
+<body>
+    <div></div>
+</body>
+</html>

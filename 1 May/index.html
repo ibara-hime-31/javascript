@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #d{
+            overflow-x: hidden;
+            height:400px;
+            width:700px;
+        }
+        #d div{
+            display:flex;
+            height:400px;
+            width:700px;
+        }
+        #d #d2 img{
+            height:400px;
+            width:800px;
+        }
+    </style>
+</body onload="slider()">
+<center>
+    <div id="d">
+        <div id="d2">
+            <img src="https://th.bing.com/th/id/OIG4.LgUj9FIjzUbdTSMn0mRg" alt="">
+            <img src="https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg" alt="">
+            <img src="https://wallpapers.com/images/featured/image-79gc4p3mqu7an848.jpg" alt="">
+
+        </div>
+    </div>
+    <script>
+        function slider(){
+            setInterval(run,3000);
+        }
+        let count=0;
+        function run(){
+            if(count==0){
+                document.getElementById("d2").style.marginLeft="0px";
+                document.getElementById("d2").style.transition="margin-left 1s";
+                count++;
+            }
+            else if(count==1){
+                document.getElementById("d2").style.marginLeft="-1400px";
+                document.getElementById("d2").style.transition="margin-left 1s";
+                count++;
+            }
+            else if(count==2){
+                document.getElementById("d2").style.marginLeft="-2800px";
+                document.getElementById("d2").style.transition="margin-left 1s";
+                count++;
+            }
+            else if(count==3){
+                document.getElementById("d2").style.marginLeft="-1400px";
+                document.getElementById("d2").style.transition="margin-left 1s";
+                count++;
+            }
+            else if(count==4){
+                document.getElementById("d2").style.marginLeft="0px";
+                document.getElementById("d2").style.transition="margin-left 1s";
+                count=0;
+            }
+        }
+    </script>
+</center>
+</html>

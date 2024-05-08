@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[12,4,567,4];
+        window.localStorage.setItem("val",JSON.stringify(arr));
+        let answer=window.localStorage.getItem("val");
+        let output=JSON.parse(answer);
+        console.log(output[2]);
+    </script>
+</body>
+</html>
