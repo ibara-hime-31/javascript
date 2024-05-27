@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #box{
+            background-color: lightblue;
+            width:300px;
+            padding:30px;
+            margin:auto;
+        }
+        #txt{
+            width:300px;
+            font-size:30px;
+            font-weight:bold;
+        }
+        button{
+            background-color: yellow;
+            color:red;
+            font-size: 20px;
+            width:70px;
+            height:30px;
+            margin:10px;
+        }
+    </style>
+    <script>
+        function mydel(){
+            let a=document.getElementById("txt").value;
+            let b=a.substring(0,a.length-1);
+            document.getElementById("txt").value=b;
+        }
+    </script>
 </head>
 <body>
-    
+    <div id="box">
+        <input type="text" id="txt">
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btn1').value" id="btn1" value="1">1</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btn2').value" id="btn2" value="2">2</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btn3').value" id="btn3" value="3">3</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btn4').value" id="btn4" value="4">4</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btn5').value" id="btn5" value="5">5</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btn6').value" id="btn6" value="6">6</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btn7').value" id="btn7" value="7">7</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btn8').value" id="btn8" value="8">8</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btn9').value" id="btn9" value="9">9</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btnzero').value" id="btnzero" value="0">0</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btnplus').value" id="btnplus" value="+">+</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btnminus').value" id="btnminus" value="-">-</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btnmul').value" id="btnmul" value="*">*</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btndiv').value" id="btndiv" value="/">/</button>
+        <button onclick="document.getElementById('txt').value=eval(document.getElementById('txt').value)" id="btnequal" value="=">=</button>
+        <button onclick="document.getElementById('txt').value+=document.getElementById('btndot').value" id="btndot" value=".">.</button>
+        <button onclick="document.getElementById('txt').value=document.getElementById('btnclear').value" id="btnclear" value="">Clear</button>
+        <button onclick="mydel()" id="btndel" value="X">X</button>
+
+    </div>
 </body>
 </html>
